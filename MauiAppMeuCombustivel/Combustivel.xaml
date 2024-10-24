@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppMeuCombustivel.Combustivel">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Button x:Name="btnJogo" Text="Jogo da Velha" Clicked="btnJogo_Clicked" />
+            
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Label Text="Preço do Etanol:" />
+            <Entry x:Name="txtEtanol" Placeholder="R$ " Keyboard="Numeric" />
+            
+            <Label Text="Preço do Gasolina:" />
+            <Entry x:Name="txtGasolina" Placeholder="R$ " Keyboard="Numeric" />
+
+            <Button x:Name="btnCompensa" Text="Qual compensa mais?" Clicked="btnCompensa_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
